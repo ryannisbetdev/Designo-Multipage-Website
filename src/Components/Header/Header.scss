@@ -1,0 +1,49 @@
+@import '../../Sass/Styles.scss';
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 2%;
+    width: 95%;
+
+    .Logo {
+        img {
+            width: 60%;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            
+
+            li {
+                list-style: none;
+                text-align: center;
+                padding-left: 30px;
+                
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $dark-grey;
+                    font-size: 17px;
+                    letter-spacing: 2px;
+                }
+            }
+
+            li:hover{
+                a{
+                    text-decoration: underline;
+                    text-decoration-color: $light-grey;
+                    text-decoration-thickness: 3px;
+                }
+            }
+        }
+
+        
+
+    }
+}

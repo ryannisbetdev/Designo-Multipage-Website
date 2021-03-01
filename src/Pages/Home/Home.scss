@@ -1,0 +1,132 @@
+@import '../../Sass/Styles.scss';
+
+
+.HomeHero{
+    display: flex;
+    background: $peach url('../../assets/home/desktop/bg-pattern-hero-home.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;;
+    min-height: 70vh;
+    margin-top: 1%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+
+    .HeroImage{
+        img {
+            position: absolute;
+            right: 0;
+            
+        }
+    }
+
+    .HeroText {
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 7.5%;
+        text-align: left;
+        color: $white;
+
+        h1 {
+            width: 80%;
+        }
+
+        p {
+            width: 80%;
+            font-size: 20px;
+            margin-bottom: 5%;
+        }
+    }
+}
+
+.ProductTiles{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-auto-rows: 40vh;
+    margin-top: 15vh;
+
+    .ProductTile{
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+       
+
+
+        h2 {
+            color: $white;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
+
+        a {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-decoration: none;
+
+        }
+
+        span {
+            color: $peach;
+            font-weight: 600;
+        }
+    }
+
+    #WebDesignTile {
+        background: $dark-grey url(../../assets/home/desktop/image-web-design-large.jpg);
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-size: cover;
+        background-blend-mode: overlay;
+        margin-top: 2%;
+        margin-right: 3%;
+     
+    }
+
+    #WebDesignTile:hover {
+        background: $peach url(../../assets/home/desktop/image-web-design-large.jpg);
+        background-size: cover;
+        background-blend-mode: screen;
+    }
+
+    #GraphicDesignTile {
+        background: $dark-grey url(../../assets/home/desktop/image-graphic-design.jpg);
+        grid-row-start: 1;
+        background-size: cover;
+        background-blend-mode: overlay;
+        margin-top: 2%;
+    }
+
+    #GraphicDesignTile:hover {
+        background: $peach url(../../assets/home/desktop/image-graphic-design.jpg);
+        background-size: cover;
+        background-blend-mode: screen;
+    }
+
+
+    #AppDesignTile {
+        background: $dark-grey url(../../assets/home/desktop/image-app-design.jpg);
+        grid-row-start: 2;
+        background-size: cover;
+        background-blend-mode: overlay;
+        margin-top: 2%;
+    }
+
+    #AppDesignTile:hover {
+        background: $peach url(../../assets/home/desktop/image-app-design.jpg);
+        background-size: cover;
+        background-blend-mode: screen;
+    }
+
+
+
+  
+
+}

@@ -1,0 +1,11 @@
+@import './Sass/Styles.scss';
+
+
+body {
+  margin: 0;
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 3% 10%;
+}
+
