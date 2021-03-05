@@ -1,0 +1,190 @@
+@import '../../Sass/Styles.scss';
+
+
+.LocationsContainer{
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 5%;
+
+        .LocationsText{
+            background:  lighten($light-peach, 15%) url('../../assets/shared/desktop/bg-pattern-two-circles.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 60%;
+            border-radius: 20px;
+
+            h2 {
+                color: $peach;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .Address, .Contact {
+                display: inline-block;
+                width: 25%;
+                text-align: left;
+                margin-right: 5%;
+                margin-left: 5%;
+
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        img {
+            border-radius: 20px;
+        }
+
+        
+    }
+}
+
+
+//Tablet 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .LocationsContainer{
+        .Canada, .UK {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 80%;
+            margin: 0;
+            margin-left: 12.5%;
+            margin-bottom: 5%;
+
+            img {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .LocationsText{
+                width: 100%;
+                border-radius: 0;
+
+                .Address, .Contact {
+                    display: inline-block;
+                    width: 40%;
+                    text-align: left;
+                    margin-right: 5%;
+                    margin-left: 5%;
+                    margin-bottom: 5%;
+    
+                }
+            }
+       
+        }
+
+
+        .Australia {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0;
+            margin-left: 12.5%;
+            margin-bottom: 5%;
+
+            img {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .LocationsText{
+                width: 100%;
+                border-radius: 0;
+
+                .Address, .Contact {
+                    display: inline-block;
+                    width: 40%;
+                    text-align: left;
+                    margin-right: 5%;
+                    margin-left: 5%;
+    
+                }
+            }
+       
+        }
+
+
+    }
+    
+}
+
+
+//MOBILE 
+
+
+@media (max-width: 767px) {
+
+
+    .LocationsContainer{
+        .Canada, .UK {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            margin: 0;
+
+            img {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .LocationsText{
+                width: 100%;
+                border-radius: 0;
+
+                .Address, .Contact {
+                    display: inline-block;
+                    width: 50%;
+                    text-align: left;
+                    margin-right: 5%;
+                    margin-left: 5%;
+                    margin-bottom: 2%;
+                }
+            }
+       
+        }
+
+
+        .Australia {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+
+            img {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .LocationsText{
+                width: 100%;
+                border-radius: 0;
+
+                .Address, .Contact {
+                    display: inline-block;
+                    width: 50%;
+                    text-align: left;
+                    margin-right: 5%;
+                    margin-left: 5%;
+                    margin-bottom: 2%;
+
+                }
+            }
+       
+        }
+
+        .UK {
+            margin-bottom: 10%;
+        }
+
+
+    }
+    
+
+}

@@ -1,0 +1,163 @@
+@import '../../Sass/Styles.scss';
+
+.ContactContainer {
+    .ContactBox{
+        display: flex;
+        flex-direction: row;
+        background: $peach url(../../assets/shared/desktop/bg-pattern-small-circle.svg);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        padding: 5%;
+        border-radius: 20px;
+
+        .ContactText{
+            width: 50%;
+            color: $white;
+            text-align: left;
+
+            p {
+                width: 70%;
+                margin-left: 15%;
+            }
+
+            h1 {
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+
+        .ContactForm{
+            width: 50%;
+            label {
+                display: none;
+            }
+
+            input {
+                background: none;
+                border: none;
+                color: $white;
+                border-bottom: $light-peach 2px solid;
+                width: 90%;
+                padding-bottom: 10px;
+                outline: none
+            }
+
+            textarea {
+                background: none;
+                border: none;
+                color: $white;
+                border-bottom: $light-peach 2px solid;
+                width: 90%;
+                padding-bottom: 10px;
+                outline: none;
+                margin-top: 10px;
+                height: 10vh;
+                font-family: $font;
+                font-size: 15px;
+                resize: none;
+            }
+
+            button {
+                margin-left: 75%;
+                padding: 15px 25px;
+                margin-top: 10px
+            }
+
+        
+        }
+      
+    }
+}
+
+//Tablet 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ContactContainer {
+        .ContactBox{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-left: 7.5%;
+            margin-top: 5%;
+
+            .ContactText{
+                width: 100%;
+                color: $white;
+                text-align: left;
+
+                p {
+                    width: 100%;
+                    margin-left: 0%;
+                }
+    
+                h1 {
+                    width: 100%;
+                    margin-left: 0%;
+                }
+
+            }
+
+            .ContactForm{
+                width: 90%;
+
+                input {
+                    font-size: 1.3rem;
+                    margin-top: 20px;
+                }
+    
+                textarea {
+                    font-size: 1.4rem;
+                }
+
+            }
+
+        
+        }
+    }
+}
+
+//MOBILE 
+@media (max-width: 767px) {
+
+    .ContactContainer {
+        .ContactBox{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 5%;
+            border-radius: 0;
+            padding: 0;
+            padding-bottom: 5%;
+
+            .ContactText{
+                width: 100%;
+
+                p {
+                    width: 90%;
+                    margin-left: 5%;
+                }
+    
+                h1 {
+                    width: 90%;
+                    margin-left: 5%;
+                }
+            }
+
+            .ContactForm{
+                width: 90%;
+
+                input {
+                    font-size: 1.1rem;
+                    margin-top: 20px;
+                }
+    
+                textarea {
+                    font-size: 1.2rem;
+                }
+
+            }
+
+        }
+    }
+}

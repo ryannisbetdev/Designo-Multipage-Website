@@ -6,12 +6,12 @@
     background: $peach url('../../assets/home/desktop/bg-pattern-hero-home.svg');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 50%;;
+    background-size: 50%;
     min-height: 70vh;
     margin-top: 1%;
     position: relative;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 20px;
 
     .HeroImage{
         img {
@@ -30,6 +30,7 @@
 
         h1 {
             width: 80%;
+            line-height: normal;
         }
 
         p {
@@ -43,7 +44,7 @@
 .ProductTiles{
     display: grid;
     grid-template-columns: 50% 50% ;
-    grid-auto-rows: 40vh;
+    grid-auto-rows: 50vh;
     margin-top: 15vh;
 
     .ProductTile{
@@ -90,12 +91,6 @@
      
     }
 
-    #WebDesignTile:hover {
-        background: $peach url(../../assets/home/desktop/image-web-design-large.jpg);
-        background-size: cover;
-        background-blend-mode: screen;
-    }
-
     #GraphicDesignTile {
         background: $dark-grey url(../../assets/home/desktop/image-graphic-design.jpg);
         grid-row-start: 1;
@@ -104,13 +99,6 @@
         margin-top: 2%;
     }
 
-    #GraphicDesignTile:hover {
-        background: $peach url(../../assets/home/desktop/image-graphic-design.jpg);
-        background-size: cover;
-        background-blend-mode: screen;
-    }
-
-
     #AppDesignTile {
         background: $dark-grey url(../../assets/home/desktop/image-app-design.jpg);
         grid-row-start: 2;
@@ -118,15 +106,177 @@
         background-blend-mode: overlay;
         margin-top: 2%;
     }
+}
 
-    #AppDesignTile:hover {
-        background: $peach url(../../assets/home/desktop/image-app-design.jpg);
-        background-size: cover;
-        background-blend-mode: screen;
+.CardSection {
+    display: flex;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+
+    .Card {
+        img {  
+            background: url(../../assets/home/desktop/bg-pattern-hero-home.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        h3 {
+            text-transform: uppercase;
+        }
+
+        p {
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+}
+
+
+
+// Tablet 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .HomeHero{
+        display: flex;
+        flex-direction: column;
+        background: $peach url('../../assets/home/desktop/bg-pattern-hero-home.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        height: 90vh;
+        width: 80%;
+        margin-left: 10%;
+
+        .HeroImage{
+            img {
+                position: relative;
+                
+            }
+        }
+    
+        .HeroText {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 0%;
+            text-align: center;
+            color: $white;
+    
+            h1 {
+                width: 100%;
+            }
+    
+            p {
+                width: 100%;
+                font-size: 20px;
+                margin-bottom: 5%;
+            }
+        }
+
     }
 
 
+    .ProductTiles{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 2%;
+        
 
-  
+        .ProductTile{
+            width: 80%;
+            margin-left: 10%;
+            padding: 10px;
+        }
+    }
 
+    .CardSection {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        width: 80%;
+        margin-left: 10%;
+        
+
+        .Card {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+
+//MOBILE 
+
+
+@media (max-width: 767px) {
+
+    .HomeHero{
+        display: flex;
+        flex-direction: column;
+        background: $peach url('../../assets/home/desktop/bg-pattern-hero-home.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        height: 100vh;
+        width: 100%;
+        margin-left: 0%;
+        border-radius: 0;
+        text-align: center;
+
+        .HeroImage{
+            img {
+                position: relative;
+                width: 100%;
+                right: auto
+            }
+        }
+    
+        .HeroText {
+            width: 95%;
+            margin-left: 2.5%;
+            margin-top: 0%;
+            text-align: center;
+            color: $white;
+    
+            h1 {
+                width: 100%;
+                font-size: 2rem;
+                line-height: normal;
+            }
+    
+            p {
+                width: 100%;
+                font-size: 20px;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
+    .ProductTiles{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 2%;
+        
+
+        .ProductTile{
+            width: 95%;
+            margin-left: 2.5%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+
+    .CardSection {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        width: 80%;
+        margin-left: 10%;
+        
+    }
 }

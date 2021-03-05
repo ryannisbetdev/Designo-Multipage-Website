@@ -4,8 +4,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 2%;
-    width: 95%;
+    width: 80%;
+    padding: 2% 10%;
+
+    .MobileNavIcon {
+        display: none;
+    }
+
 
     .Logo {
         img {
@@ -13,7 +18,8 @@ header{
         }
     }
 
-    nav {
+    .DesktopNavigation {
+  
         ul {
             display: flex;
             flex-direction: row;
@@ -43,7 +49,151 @@ header{
             }
         }
 
+      
         
 
     }
+}
+
+
+.Active, .Inactive {
+    display: none;
+}
+
+// Tablet 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header{
+        width: 90%;
+        padding-left: 5%;
+
+        .Logo {
+            img {
+                width: 100%;
+            }
+        }
+
+        nav {
+            width: 150%;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                
+    
+                li {
+                    list-style: none;
+                    text-align: center;
+                    padding-left: 10px;
+                   
+                    
+    
+                    a {
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: $dark-grey;
+                        font-size: 10px;
+                        letter-spacing: 1px;
+                    }
+                }
+    
+                li:hover{
+                    a{
+                        text-decoration: underline;
+                        text-decoration-color: $light-grey;
+                        text-decoration-thickness: 3px;
+                    }
+                }
+            }
+    
+            
+    
+        }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    header {
+        padding-top: 5%;
+        align-items: center;
+
+        .DesktopNavigation {
+            display: none;
+        }
+
+        .MobileNavIcon {
+            display: block;
+            outline: none;
+            width: 30px;
+            button {
+                background: none;
+                border: none;
+                font-size: 1.7rem;
+                outline: none;
+            }
+        }
+
+        .Logo {
+            img {
+                width: 70%;
+                padding-top: 7px;
+            }
+        }
+
+    
+    }
+
+
+    
+    .Inactive {
+        display: none;
+    }
+
+    .Active {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        z-index: 2;
+
+       ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            background-color: $dark-grey;
+            padding: 0;
+            top: 0;
+            margin: 0;
+
+        }   
+
+        li {
+            padding: 10px 0px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease 0s;
+            width: 100%;
+            text-align: left;
+            padding-left: 5%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                button {
+                    background: none;
+                    border:none;
+                    font-size: 1.2rem;
+                    outline: none;
+                }
+            }
+
+        }
+            
+    }
+
 }

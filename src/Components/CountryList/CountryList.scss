@@ -1,0 +1,54 @@
+@import '../../Sass/Styles.scss';
+
+.CountryListContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    img{
+        background: url(../../assets/home/desktop/bg-pattern-hero-home.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+//Tablet 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .CountryListContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0%;
+        margin-bottom: 5%;
+
+        .Card {
+            margin-top: 10%;
+        }
+
+    }
+}
+
+
+
+
+//MOBILE 
+@media (max-width: 767px) {
+    .CountryListContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0%;
+        margin-bottom: 5%;
+
+        .Card {
+            margin-top: 10%;
+        }
+
+    }
+}

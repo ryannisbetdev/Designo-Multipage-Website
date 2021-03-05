@@ -1,9 +1,8 @@
 @import '../../Sass/Styles.scss';
 
-
-.GraphicDesignHero {
-    background: $peach url('../../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg');
-    background-size: 70%;
+.WebDesignHero {
+    background: $peach url('../../assets/web-design/desktop/bg-pattern-intro-web.svg');
+    background-size: 50%;
     color: $light-grey;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -21,15 +20,13 @@
 
 }
 
-
-
-.GraphicDesignCardContainer {
+.WebDesignCardContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    margin-top: 5%;
+    margin-top: 10%;
     width: 90%;
     margin-left: 5%;
 
@@ -62,11 +59,38 @@
 
 }
 
+.OtherPortfolioPages{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 5%;
 
-.GraphicDesignContainer {
+    
 
-    #WebDesignTile {
-        background: $dark-grey url(../../assets/home/desktop/image-web-design-large.jpg);
+    h2 {
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    a {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-decoration: none;
+
+    }
+
+    span {
+        color: $peach;
+        font-weight: 600;
+    }
+
+    #GraphicDesignTile {
+        background: $dark-grey url(../../assets/home/desktop/image-graphic-design.jpg);
         background-size: cover;
         background-blend-mode: overlay;
         margin-top: 2%;
@@ -77,16 +101,28 @@
         flex-direction: column;
         align-content: center;
         justify-content: center;
-     
     }
+
+    #AppDesignTile {
+        background: $dark-grey url(../../assets/home/desktop/image-app-design.jpg);
+        background-size: cover;
+        background-blend-mode: overlay;
+        margin-top: 2%;
+        width: 45%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+
 }
 
-
-
-//Tablet 
+// Tablet 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .GraphicDesignHero{
+    .WebDesignHero{
         margin-top: 5%;
         width: 95%;
         margin-left: 2.5%;
@@ -96,21 +132,20 @@
         }
     }
 
-    .GraphicDesignCardContainer  {
+    .WebDesignCardContainer  {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     
 }
 
 
-
 //Mobile 
 
 @media (max-width: 767px) {
-    .GraphicDesignHero{
+    .WebDesignHero{
         margin-top: 5%;
         width: 100%;
         border-radius: 0;
@@ -120,10 +155,10 @@
         }
     }
 
-    .GraphicDesignCardContainer{
+    .WebDesignCardContainer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
 
     .OtherPortfolioPages{
@@ -131,7 +166,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        #WebDesignTile, #AppDesignTile {
+        #GraphicDesignTile, #AppDesignTile {
             width: 100%;
             height: 30vh;
         }
